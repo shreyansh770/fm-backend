@@ -7,7 +7,7 @@ require('dotenv/config');
 let PORT = process.env.PORT
 
 
-// register -> payment -> booking
+// register -> booking -> payment
 
 const app = express()
 app.use(cors())
