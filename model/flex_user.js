@@ -35,6 +35,13 @@ const flexUserSchema = new mongoose.Schema({
     phno: {
         type: String,
         required: true
+    },
+
+    payDone:{
+
+        type:Boolean,
+        required:true,
+        default:false
     }
     
 })

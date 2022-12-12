@@ -15,6 +15,7 @@ exports.register = async (req, res) => {
             phno
         } = req.body
 
+       
         let uid = uuidv4()
 
         let user = await fuModel.find({
