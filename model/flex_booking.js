@@ -1,11 +1,13 @@
 const mongoose = require('mongoose')
 require('dotenv/config');
+
 mongoose.connect(process.env.DB_LINK, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(db => {
     console.log("fb model connected");
 }).catch((err) => {
+    console.log("something wrong here");
     console.log(err);
 })
 
