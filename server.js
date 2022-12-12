@@ -23,7 +23,11 @@ app.use("/payment",paymentRouter)
 app.use("/booking",bookingRouter)
 
 
-
+app.use((req, res) => {
+    res.json({
+        message: "Page not found"
+    })
+})
 
 app.listen(PORT,()=>{
     console.log(`Server running on ${PORT}`);
