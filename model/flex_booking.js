@@ -7,7 +7,6 @@ mongoose.connect(process.env.DB_LINK, {
 }).then(db => {
     console.log("fb model connected");
 }).catch((err) => {
-    console.log("something wrong here");
     console.log(err);
 })
 
